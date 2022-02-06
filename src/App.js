@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Navbar, Nav, Button} from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div classNameNameName="App">
+<nav className="navbar navbar-light bg-light justify-content-between">
+  <a className="navbar-brand">Navbar</a>
+  <form className="form-inline">
+    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
     </div>
   );
 }
